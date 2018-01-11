@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="分割线">
+<meta name="description" content="简单介绍一些hexo使用过程中我们最经常用到命令行。">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo常用语法">
 <meta property="og:url" content="http://yoursite.com/2018/01/09/hexo常用语法/index.html">
 <meta property="og:site_name" content="产品汪的进击之路">
-<meta property="og:description" content="分割线">
+<meta property="og:description" content="简单介绍一些hexo使用过程中我们最经常用到命令行。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-09T06:21:00.883Z">
+<meta property="og:updated_time" content="2018-01-11T14:52:13.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo常用语法">
-<meta name="twitter:description" content="分割线">
+<meta name="twitter:description" content="简单介绍一些hexo使用过程中我们最经常用到命令行。">
 
 
 
@@ -342,7 +342,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3
+                  250
                 </span>
               
 
@@ -379,7 +379,17 @@
       
 
       
-        <h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2>
+        <p>简单介绍一些hexo使用过程中我们最经常用到命令行。<br><a id="more"></a></p>
+<h3 id="1-新建博客"><a href="#1-新建博客" class="headerlink" title="1. 新建博客"></a>1. 新建博客</h3><p><code>hexo new &quot;blog&#39;s name&quot;</code>#新建一篇博客，文件存储在<code>hexo/source/_posts/blog&#39;s name.md</code>其中<code>new</code>可以简写成<code>n</code>，即<br><code>hexo n &quot;blog&#39;s name&quot;</code>也能起到一样的效果。</p>
+<h3 id="2-服务器更新"><a href="#2-服务器更新" class="headerlink" title="2. 服务器更新"></a>2. 服务器更新</h3><ul>
+<li>开启本地服务<code>hexo server</code>，可以简写为<code>hexo s</code><br>hexo会应用全部修改并自动更新。</li>
+<li>更改端口<code>hexo server -p 5000</code>有时候发现<code>http://localhost:4000/</code>无法登录了，可以使用该命令修改端口。</li>
+<li>编译<code>hexo generate</code>部署前需要进行编译动作</li>
+<li>部署<code>hexo deploy</code> 将本地内容部署到github上，可以将上述两条命令做结合<code>hexo d -g</code>可以同时完成。</li>
+<li>清楚<code>public</code> 当<code>source</code>文件夹中的部分内容被修改后，为避免出错，可以执行该命令进行重新编译。</li>
+</ul>
+<p>更多内容可以查阅<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a>，后续有用到一些命令行，会加以补充。</p>
+
       
     </div>
     
@@ -418,10 +428,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/09/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -512,22 +518,31 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -558,7 +573,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分割线"><span class="nav-number">1.</span> <span class="nav-text">分割线</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-新建博客"><span class="nav-number">1.</span> <span class="nav-text">1. 新建博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-服务器更新"><span class="nav-number">2.</span> <span class="nav-text">2. 服务器更新</span></a></li></ol></div>
             
 
           </div>
@@ -592,7 +607,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">434</span>
+    <span title="Site words total count">681</span>
   
 </div>
 
